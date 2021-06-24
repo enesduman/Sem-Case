@@ -1,4 +1,3 @@
-from os import EX_CANTCREAT
 from flask import Flask,request
 from bs4 import BeautifulSoup
 from flask.json import jsonify
@@ -60,11 +59,11 @@ def car_list(id=None):
             cx = {
             'advert_title':advert_title[0].text,
             'car_price':car_price[0].text,
-            'car_brand':car_brand[0].text[4:],
-            'car_model_year':car_model_year[0].text[0:4],
+            'car_brand':car_brand[0].text[4:].strip(),
+            'car_model_year':car_model_year[0].text[0:4].strip(),
             'car_photo_url':car_photo_url[0]['src'],
-            'car_color':car_color_details.find_next_sibling('dd').text,
-            'gear_type':car_gear_type_details.find_next_sibling('dd').text
+            'car_color':car_color_details.find_next_sibling('dd').text.strip(),
+            'gear_type':car_gear_type_details.find_next_sibling('dd').text.strip()
             }
         except:
              cx = {

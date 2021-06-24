@@ -1,0 +1,12 @@
+*.pyc
+*.pyo
+
+.installed.cfg
+bin
+lib
+lib64
+
+#for virtual env
+virtualenv/
+.venv/
+venv/

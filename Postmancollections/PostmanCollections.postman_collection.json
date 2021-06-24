@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "0c0619a0-09fd-4aa1-ba45-618e0f90a800",
+		"name": "PostmanCollections",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Filtresiz 50 araç",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/cars/list",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"cars",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Siyah renkli araçları getirir.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/cars/list?extcolor=black",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"cars",
+						"list"
+					],
+					"query": [
+						{
+							"key": "extcolor",
+							"value": "black"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Siyah renkli BMW araçları getirir.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/cars/list?brand=BMW&extcolor=black",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"cars",
+						"list"
+					],
+					"query": [
+						{
+							"key": "brand",
+							"value": "BMW"
+						},
+						{
+							"key": "extcolor",
+							"value": "black"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Otomatik vites türünde 2018 model Ford marka araçları getirir.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/cars/list?trans=automatic&brand=Ford&year=2018",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"cars",
+						"list"
+					],
+					"query": [
+						{
+							"key": "trans",
+							"value": "automatic"
+						},
+						{
+							"key": "brand",
+							"value": "Ford"
+						},
+						{
+							"key": "year",
+							"value": "2018"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
