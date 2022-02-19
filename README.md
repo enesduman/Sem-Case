@@ -26,7 +26,7 @@ virtualenv .venv/
 ## Proje Yapılandırması
 
 ```
-cd Sem-Case
+cd /project_folder
 
 source .venv/bin/activate
 
