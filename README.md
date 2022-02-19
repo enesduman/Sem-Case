@@ -18,7 +18,7 @@ git clone <project_url>
 ```
 sudo pip install virtualenv
 
-cd /Desktop/Sem-Case
+cd /Desktop/<project_folder>
 
 virtualenv .venv/
 ```
